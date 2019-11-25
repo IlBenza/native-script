@@ -1,8 +1,8 @@
-const SearchViewModel = require("./search-view-model");
+const MapsViewModel = require("./maps-view-model");
 
 function onNavigatingTo(args) {
     const component = args.object;
-    component.bindingContext = new SearchViewModel();
+    component.bindingContext = new MapsViewModel();
 }
 
 exports.onNavigatingTo = onNavigatingTo;
