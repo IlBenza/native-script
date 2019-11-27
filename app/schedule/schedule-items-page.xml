@@ -1,16 +1,34 @@
 <Page
     navigatingTo="onNavigatingTo"
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns:lv="nativescript-ui-listview">
 
-    <ActionBar>
+    <ActionBar class="schedule">
         <Label text="Schedule"></Label>
     </ActionBar>
 
-    <ListView items="{{ items }}" itemTap="onItemTap">
+    <!-- <ListView items="{{ items }}" itemTap="onItemTap">
         <ListView.itemTemplate>
-            <StackLayout orientation="horizontal">
-                <Label text="{{ name }}" textWrap="true"></Label>
+            <StackLayout orientation="vertical">
+                <Label class="border-list name" text="{{ name }}" textWrap="true"></Label>
+                <Label class="border-list description" text="{{ description }}" textWrap="true"></Label>
             </StackLayout>
         </ListView.itemTemplate>
-    </ListView>
+    </ListView> -->
+
+    <lv:RadListView class="myList" items="{{ items }}" row="1" groupingFunction="{{ myGroupingfunc }}">
+        <lv:RadListView.itemTemplate>
+            <StackLayout orientation="vertical">
+                <StackLayout class="wrap">
+                    <Label class="border-list name" text="{{ name }}" textWrap="true"></Label>
+                    <Label class="border-list description" text="{{ description }}" textWrap="true"></Label>
+                    <StackLayout
+                        class="separator"
+                        height="2"
+                        marginTop="10"
+                        backgroundColor="#f1f1f1">
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </lv:RadListView.itemTemplate>
+    </lv:RadListView>
 </Page>

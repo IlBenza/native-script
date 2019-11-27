@@ -1,0 +1,25 @@
+$scheduleColor: #3880ff;
+
+ActionBar.schedule {
+    background-color: $scheduleColor;
+}
+
+.myList {
+    .wrap {
+        background-color: white;
+        padding-bottom: 0;
+    }
+}
+
+.border-list {
+    border-left-width: 3;
+    border-color: #3bc7c4;
+    &.name {
+        font-size: 16;
+        color: black;
+    }
+    &.description {
+        font-size: 12;
+        color: gray;
+    }
+}
