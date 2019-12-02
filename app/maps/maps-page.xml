@@ -6,8 +6,18 @@
         <Label text="Maps"></Label>
     </ActionBar>
 
-    <GridLayout class="page__content">
-        <Label class="page__content-icon fas" text="&#xf279;"></Label>
-        <Label class="page__content-placeholder" text="{{testoMaps}}"></Label>
-    </GridLayout>
+    <StackLayout orientation="vertical">
+        <TextField
+            hint="Enter nome"
+            text="{{ nome }}"
+            color="orangered"
+            backgroundColor="#ffffff"></TextField>
+        <TextField
+            hint="Enter cognome"
+            text="{{ cognome }}"
+            color="orangered"
+            backgroundColor="#ffffff"></TextField>
+        <Label text="{{ nome }}"></Label>
+        <Label text="{{ cognome }}"></Label>
+    </StackLayout>
 </Page>
