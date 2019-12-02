@@ -1,4 +1,5 @@
 <Page
+    class="page-speakers"
     navigatingTo="onNavigatingTo"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
@@ -6,9 +7,27 @@
         <Label text="Speakers"></Label>
     </ActionBar>
 
-    <StackLayout class="vertical">
-        <Label text="{{ testoSpeakers }}"></Label>
-        <Label text="{{ subtitle }}"></Label>
-        <Button class="-primary" text="Click" tap="onTap"></Button>
+    <StackLayout orientation="vertical">
+        <StackLayout class="cardView" orientation="vertical">
+            <StackLayout class="header" orientation="horizontal">
+                <Image
+                    class="avatar"
+                    src="https://www.netclipart.com/pp/m/120-1205442_download-bart-simpson-head-png.png"
+                    stretch="aspectFill"
+                />
+                <Label fontSize="16" text="Mario Bianchi"></Label>
+            </StackLayout>
+            <StackLayout class="content" orientation="vertical">
+                <Label text="Colazione" textWrap="true"></Label>
+                <StackLayout
+                    class="separator"
+                    height="2"
+                    margin-top="5"
+                    margin-bottom="5"
+                    backgroundColor="#bdbdbd">
+                </StackLayout>
+                <Label text="Bla bloe blah bluah" textWrap="true"></Label>
+            </StackLayout>
+        </StackLayout>
     </StackLayout>
 </Page>

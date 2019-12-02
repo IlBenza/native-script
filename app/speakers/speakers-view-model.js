@@ -3,14 +3,10 @@ const observableModule = require("tns-core-modules/data/observable");
 function SpeakersViewModel() {
     const viewModel = observableModule.fromObject({
 
-        testoSpeakers: "Testo dal modello Speakers",
-        subtitle: ""
+        name: "Mario Bianchi",
+        azione: "Colazione 8:00 - 9:00",
+        descrizione: "caffè cornetto amaro"
     });
-
-    setTimeout(() => {
-
-        viewModel.subtitle = "Mario Rossi";
-    }, 700);
 
     return viewModel;
 }

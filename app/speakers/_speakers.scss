@@ -1,5 +1,26 @@
 $speakersColor: #0cd1e8;
 
-ActionBar.speakers{
+ActionBar.speakers {
     background-color: $speakersColor;
+}
+
+Page.page-speakers {
+    background-color: white;
+    .cardView {
+        background-color: #f1f1f1;
+        border-radius: 10;
+        padding: 5 20;
+        margin: 25 20;
+        .avatar {
+            width: 72;
+            height: 72;
+            border-radius: 50;
+        }
+        .header {
+            padding: 10;
+        }
+        .content {
+            padding: 30 20 10;
+        }
+    }
 }
