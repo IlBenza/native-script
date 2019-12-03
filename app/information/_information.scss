@@ -3,3 +3,17 @@ $informationColor: #ffce00;
 ActionBar.information{
     background-color: $informationColor;
 }
+
+Page.info {
+    StackLayout {
+      Label,
+      StackLayout {
+        padding: 10;
+      }
+    }
+    .metadata {
+      Label {
+        margin: 0;
+      }
+    }
+  }
