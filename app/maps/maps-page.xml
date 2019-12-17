@@ -1,23 +1,16 @@
 <Page
     navigatingTo="onNavigatingTo"
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns:maps="nativescript-google-maps-sdk">
 
     <ActionBar class="maps">
         <Label text="Maps"></Label>
     </ActionBar>
 
-    <StackLayout orientation="vertical">
-        <TextField
-            hint="Enter nome"
-            text="{{ nome }}"
-            color="orangered"
-            backgroundColor="#ffffff"></TextField>
-        <TextField
-            hint="Enter cognome"
-            text="{{ cognome }}"
-            color="orangered"
-            backgroundColor="#ffffff"></TextField>
-        <Label text="{{ nome }}"></Label>
-        <Label text="{{ cognome }}"></Label>
-    </StackLayout>
+    <GridLayout>
+        <maps:mapView
+            latitude="{{ latitude }}"
+            longitude="{{ longitude }}"
+            zoom="{{ zoom }}"
+        />
+    </GridLayout>
 </Page>
