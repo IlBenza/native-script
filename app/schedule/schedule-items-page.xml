@@ -15,7 +15,7 @@
         </ListView.itemTemplate>
     </ListView> -->
 
-    <lv:RadListView class="myList" items="{{ items }}" row="1" groupingFunction="{{ myGroupingfunc }}">
+    <lv:RadListView class="myList" items="{{ items }}" row="1" groupingFunction="{{ myGroupingFunc }}">
         <lv:RadListView.itemTemplate>
             <StackLayout orientation="vertical">
                 <StackLayout class="wrap">
