@@ -1,7 +1,7 @@
 module.exports = [
     {
         "nome": "Mario Bianchi",
-        "img": "https://www.netclipart.com/pp/m/120-1205442_download-bart-simpson-head-png.png",
+        "img": "https://cc-media-foxit.fichub.com/image/fox-it-mondofox/d7b01207-8e26-41be-a8ae-4e77b2859bca/bart-simpson-630x630.jpg",
         "intervento": "Colazione",
         "inizio": "8:00",
         "fine": "9:00",
@@ -10,7 +10,7 @@ module.exports = [
     },
     {
         "nome": "Dario Cross",
-        "img": "https://www.film.it/fileadmin/mediafiles/film/multimedia/201707/images/628x400/MV5BYWUyMTI0NTMtYTMyZC00ZjAwLTk0MWUtYWZjNWU4ZDFmZmFmXkEyXkFqcGdeQXVyNTc3MjUzNTI%40._V1_SY1000_CR0%2C0%2C1499%2C1000_AL_.jpg",
+        "img": "https://www.thedota2store.com/media/catalog/product/cache/42ff4984ffd52745e8753c22ee11bc83/t/h/the-joker-batman-the-dark-knight-face-mask.jpg",
         "intervento": "Presentazione ESOF 2019",
         "inizio": "9:00",
         "fine": "10:00",

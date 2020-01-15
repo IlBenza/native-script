@@ -3,7 +3,7 @@ const data = require('./data')
 const firebase = require("nativescript-plugin-firebase/app")
 const ObservableArray = require("tns-core-modules/data/observable-array").ObservableArray;
 
-let myObservableArray = new ObservableArray();
+const myObservableArray = new ObservableArray();
 
 const firestore = firebase.firestore()
 const schedule = firestore.collection("schedule")
