@@ -38,7 +38,8 @@ function ScheduleItemsViewModel() {
         items: myObservableArray,
         myGroupingFunc: function(item) {
             return item.group
-        }
+        },
+        isLogin: false
     });
     return viewModel;
 }

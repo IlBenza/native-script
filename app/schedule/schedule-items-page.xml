@@ -4,31 +4,24 @@
 
     <ActionBar class="schedule">
         <Label text="Schedule"></Label>
+        <ActionItem tap = "showDialog" ios.position = "right" ios.systemIcon = "17"></ActionItem>
     </ActionBar>
-
-    <!-- <ListView items="{{ items }}" itemTap="onItemTap">
-        <ListView.itemTemplate>
-            <StackLayout orientation="vertical">
-                <Label class="border-list name" text="{{ name }}" textWrap="true"></Label>
-                <Label class="border-list description" text="{{ description }}" textWrap="true"></Label>
-            </StackLayout>
-        </ListView.itemTemplate>
-    </ListView> -->
-
-    <lv:RadListView class="myList" items="{{ items }}" row="1" groupingFunction="{{ myGroupingFunc }}">
-        <lv:RadListView.itemTemplate>
-            <StackLayout orientation="vertical">
-                <StackLayout class="wrap">
-                    <Label class="border-list name" text="{{ name }}" textWrap="true"></Label>
-                    <Label class="border-list description" text="{{ description }}" textWrap="true"></Label>
-                    <StackLayout
-                        class="separator"
-                        height="2"
-                        marginTop="10"
-                        backgroundColor="#f1f1f1">
+    <GridLayout visibility="{{isLogin ? 'visible' : 'collapse'}}">
+        <lv:RadListView class="myList" items="{{ items }}" row="1" groupingFunction="{{ myGroupingFunc }}">
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical">
+                    <StackLayout class="wrap">
+                        <Label class="border-list name" text="{{ name }}" textWrap="true"></Label>
+                        <Label class="border-list description" text="{{ description }}" textWrap="true"></Label>
+                        <StackLayout
+                            class="separator"
+                            height="2"
+                            marginTop="10"
+                            backgroundColor="#f1f1f1">
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
-            </StackLayout>
-        </lv:RadListView.itemTemplate>
-    </lv:RadListView>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </GridLayout>
 </Page>
